@@ -1,0 +1,511 @@
+{
+	"info": {
+		"_postman_id": "27ea60d5-80aa-4806-a4da-af5da9688ed3",
+		"name": "api-kiosk",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:9909/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\":\"niphon\",\"password\":\"123456\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9909/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9909",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9909/personall",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im5pcGhvbiIsImlhdCI6MTY0MDU4ODYyNiwiZXhwIjoxNjQwNjc1MDI2fQ.uDxhAalYWWP0b8Dmm7VRXTwc7J50Hpiw6MWRP4l-2Dg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"cid\":\"5340500011174\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9909/personall",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9909",
+					"path": [
+						"personall"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9909/personhihn",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im5pcGhvbiIsImlhdCI6MTY0MDU4ODYyNiwiZXhwIjoxNjQwNjc1MDI2fQ.uDxhAalYWWP0b8Dmm7VRXTwc7J50Hpiw6MWRP4l-2Dg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"hn\":\"15321\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9909/personhihn",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9909",
+					"path": [
+						"personhihn"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9909/personhicid",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im5pcGhvbiIsImlhdCI6MTY0MDU4ODYyNiwiZXhwIjoxNjQwNjc1MDI2fQ.uDxhAalYWWP0b8Dmm7VRXTwc7J50Hpiw6MWRP4l-2Dg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"cid\":\"5340500011174\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9909/personhicid",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9909",
+					"path": [
+						"personhicid"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9909/registervisit",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im5pcGhvbiIsImlhdCI6MTY0MDU4ODYyNiwiZXhwIjoxNjQwNjc1MDI2fQ.uDxhAalYWWP0b8Dmm7VRXTwc7J50Hpiw6MWRP4l-2Dg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"vstdttm\":\"2021-12-28 09:54:11\",\"hn\":\"15321\",\"cln\":\"10100\",\"pttype\":\"21\",\"register\":\"76\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9909/registervisit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9909",
+					"path": [
+						"registervisit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9909/registeroday",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im5pcGhvbiIsImlhdCI6MTY0MDU4ODYyNiwiZXhwIjoxNjQwNjc1MDI2fQ.uDxhAalYWWP0b8Dmm7VRXTwc7J50Hpiw6MWRP4l-2Dg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"tablename\":\"o281264\",\"vn\":\"4133744\",\"hn\":\"15321\",\"fname\":\"นิพนธ์\",\"lname\":\"เทียนหอม\",\"male\":\"1\",\"age\":\"40\",\"pttype\":\"21\",\"vsttime\":\"954\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9909/registeroday",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9909",
+					"path": [
+						"registeroday"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9909/updatevitalsign",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im5pcGhvbiIsImlhdCI6MTY0MDU4ODYyNiwiZXhwIjoxNjQwNjc1MDI2fQ.uDxhAalYWWP0b8Dmm7VRXTwc7J50Hpiw6MWRP4l-2Dg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"bw\":\"75.5\",\"height\":\"165\",\"tt\":\"36.5\",\"sbp\":\"135\",\"dbp\":\"85\",\"pr\":\"77\",\"bmi\":\"0\",\"vn\":\"4133744\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9909/updatevitalsign",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9909",
+					"path": [
+						"updatevitalsign"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9909/updatevitalsignoday",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im5pcGhvbiIsImlhdCI6MTY0MDU4ODYyNiwiZXhwIjoxNjQwNjc1MDI2fQ.uDxhAalYWWP0b8Dmm7VRXTwc7J50Hpiw6MWRP4l-2Dg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"tablename\":\"o281264\",\"bw\":\"75.5\",\"tt\":\"36.5\",\"sbp\":\"135\",\"dbp\":\"85\",\"pr\":\"77\",\"vn\":\"4133744\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9909/updatevitalsignoday",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9909",
+					"path": [
+						"updatevitalsignoday"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9909/updateldate",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im5pcGhvbiIsImlhdCI6MTY0MDU4ODYyNiwiZXhwIjoxNjQwNjc1MDI2fQ.uDxhAalYWWP0b8Dmm7VRXTwc7J50Hpiw6MWRP4l-2Dg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"ldate\":\"2021-12-28\",\"hn\":\"15321\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9909/updateldate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9909",
+					"path": [
+						"updateldate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9909/getfu",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im5pcGhvbiIsImlhdCI6MTY0MDU4ODYyNiwiZXhwIjoxNjQwNjc1MDI2fQ.uDxhAalYWWP0b8Dmm7VRXTwc7J50Hpiw6MWRP4l-2Dg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"hn\":\"15321\",\"hn1\":\"15321\",\"hn2\":\"15321\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9909/getfu",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9909",
+					"path": [
+						"getfu"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9909/addsat",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im5pcGhvbiIsImlhdCI6MTY0MDU4ODYyNiwiZXhwIjoxNjQwNjc1MDI2fQ.uDxhAalYWWP0b8Dmm7VRXTwc7J50Hpiw6MWRP4l-2Dg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"vn\":\"4133744\",\"sat\":\"98\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9909/addsat",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9909",
+					"path": [
+						"addsat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9909/personovsthn",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im5pcGhvbiIsImlhdCI6MTY0MDU4ODYyNiwiZXhwIjoxNjQwNjc1MDI2fQ.uDxhAalYWWP0b8Dmm7VRXTwc7J50Hpiw6MWRP4l-2Dg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"hn\":\"15321\",\"vstdttm\":\"2021-12-28\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9909/personovsthn",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9909",
+					"path": [
+						"personovsthn"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9909/personovstcid",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im5pcGhvbiIsImlhdCI6MTY0MDU4ODYyNiwiZXhwIjoxNjQwNjc1MDI2fQ.uDxhAalYWWP0b8Dmm7VRXTwc7J50Hpiw6MWRP4l-2Dg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"cid\":\"5340500011174\",\"vstdttm\":\"2021-12-28\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9909/personovstcid",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9909",
+					"path": [
+						"personovstcid"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
